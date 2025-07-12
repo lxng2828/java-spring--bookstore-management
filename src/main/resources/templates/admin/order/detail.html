@@ -164,11 +164,6 @@
                                     th:href="@{'/admin/orders/edit/' + ${order.id}}" class="btn btn-warning">
                                     <i class="bi bi-pencil"></i> Sửa trạng thái
                                 </a>
-                                <a th:if="${order != null and order.id != null}"
-                                    th:href="@{'/admin/orders/delete/' + ${order.id}}" class="btn btn-danger"
-                                    onclick="return confirm('Xác nhận xóa đơn hàng này?')">
-                                    <i class="bi bi-trash"></i> Xóa
-                                </a>
                                 <span th:unless="${order != null and order.id != null}">Không có hành động</span>
                             </div>
                         </div>

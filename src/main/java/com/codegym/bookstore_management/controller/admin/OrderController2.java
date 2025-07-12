@@ -58,10 +58,4 @@ public class OrderController2 {
             return "redirect:/admin/orders";
         }
     }
-
-    @GetMapping("/delete/{id}")
-    public String deleteOrder(@PathVariable Long id) {
-        return "redirect:/admin/orders";
-    }
-
 }
